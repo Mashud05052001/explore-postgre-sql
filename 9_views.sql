@@ -9,6 +9,9 @@ CREATE View dept_avg_salary AS
 
 SELECT * from dept_avg_salary;
 
+-- This view are NON materialized view. In non materialized view when we call it it run the full function & gives the value. But if we used material view then for first time only it run & saved the data in storage. After then whenever we call it it returns the stored data. AS a result we cannot get the updated data if it update after that but we get the data faster then non materialized view. It boost up the speed.
+
 
 CREATE VIEW mahi AS
     SELECT * FROM employees;
+
